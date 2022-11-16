@@ -40,6 +40,8 @@ body {
   margin: 0;
   background-color: var(--light-brown);
   color: var(--brown);
+  display: flex;
+  justify-content: center;
 }
 
 a {

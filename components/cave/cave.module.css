@@ -1,0 +1,10 @@
+.cave {
+  height: 50px;
+  background-color: var(--brown);
+  border: 1px solid var(--light-brown);
+  position: absolute;
+}
+
+.cave[data-isOn="true"] {
+  position: relative;
+}
