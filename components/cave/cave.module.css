@@ -1,10 +1,18 @@
+.animContainer {
+  position: absolute;
+  /* background-color: red; */
+}
+.animContainer[data-isOn="true"] {
+  position: relative;
+}
+
+.caveContainer {
+  display: flex;
+  align-items: center;
+}
+
 .cave {
   height: 50px;
   background-color: var(--brown);
   border: 1px solid var(--light-brown);
-  position: absolute;
-}
-
-.cave[data-isOn="true"] {
-  position: relative;
 }
