@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  height: 100vh;
+  /* background-color: red; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.childrenContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container[data-isOn="true"] {
+  justify-content: flex-start;
+}

@@ -1,12 +1,15 @@
 import Head from "next/head";
+import styles from "./film.module.css";
 
 export default function Film() {
   return (
-    <div>
-       <Head>
+    <>
+      <Head>
         <title>Film | Bamyan</title>
       </Head>
-      Film
-    </div>
-  )
+      <div className={styles.container}>
+        <img src="https://picsum.photos/200/300" alt="" />
+      </div>
+    </>
+  );
 }

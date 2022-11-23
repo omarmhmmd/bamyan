@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const leftItem = {
-  hidden: { opacity: 0, x: 0 },
-  visible: { opacity: 1, x: -16 },
+  hidden: { opacity: 0, y: 0 },
+  visible: { opacity: 1, y: -8 },
 };
 const rightItem = {
-  hidden: { opacity: 0, x: 0 },
-  visible: { opacity: 1, x: 16 },
+  hidden: { opacity: 0, y: 0 },
+  visible: { opacity: 1, y: 8 },
 };
 
 export default function Cave(props) {
@@ -30,20 +30,19 @@ export default function Cave(props) {
         zIndex: props.zIndex,
       }}
     >
-      <Link href="/try" className={styles.caveContainer}>
+      <Link href={props.eng} className={styles.caveContainer}>
         <motion.div
           variants={leftItem}
           transition={{ duration: 0.5 }}
           class="english"
           style={{
             textTransform: "capitalize",
-            position: "absolute"
           }}
         >
           {props.eng}
         </motion.div>
         <motion.div
-          whileTap={{ scale: 0.5 }}
+          whileTap={{ scale: 0.9 }}
           style={{
             borderRadius: `${props.radius} ${props.radius} 0 0`,
             width: props.width,
@@ -56,10 +55,6 @@ export default function Cave(props) {
           variants={rightItem}
           transition={{ duration: 0.5 }}
           class="farsi"
-          style={{
-            textTransform: "capitalize",
-            position: "absolute"
-          }}
         >
           {props.farsi}
         </motion.div>
