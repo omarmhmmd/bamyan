@@ -1,10 +1,9 @@
 .navigation {
   display: flex;
-  margin-top: 32px;
+  margin-top: 16px;
   width: 100vw;
-  justify-content:space-evenly;
+  justify-content:space-around;
   align-items: center;
-  /* background-color: antiquewhite; */
 }
 
 

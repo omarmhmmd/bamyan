@@ -1,6 +1,5 @@
 .animContainer {
   position: absolute;
-  /* background-color: red; */
 }
 .animContainer[data-isOn="true"] {
   position: relative;
@@ -17,3 +16,4 @@
   background-color: var(--brown);
   border: 1px solid var(--light-brown);
 }
+

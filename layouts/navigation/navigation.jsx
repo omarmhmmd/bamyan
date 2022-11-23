@@ -5,9 +5,6 @@ import { motion } from "framer-motion";
 export default function Navigation() {
   return (
     <motion.div
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // transition={{ duration: 1 }}
       className={styles.navigation}
     >
       <Cave eng="info" farsi="اطلاعات" radius="25px" width="50px" zIndex="4" />

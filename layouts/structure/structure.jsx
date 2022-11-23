@@ -15,14 +15,12 @@ export default function Structure({ children }) {
   }, [router.asPath]);
 
   return (
-    <motion.div
-      layout
-      data-isOn={isOn}
-      className={styles.container}
-    >
+    <motion.div data-isOn={isOn} className={styles.container}>
       <Navigation />
       <AnimatePresence>
         <motion.div
+          layout
+          data-isOn={isOn}
           key={router.asPath}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

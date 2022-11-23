@@ -2,6 +2,7 @@ import styles from "./cave.module.css";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const leftItem = {
   hidden: { opacity: 0, y: 0 },
@@ -13,6 +14,8 @@ const rightItem = {
 };
 
 export default function Cave(props) {
+  const router = useRouter();
+  console.log("heyyy", router.asPath);
   const [isOn, setIsOn] = useState(false);
   const toggleSwitch = () => setIsOn(!isOn);
   useEffect(() => {
