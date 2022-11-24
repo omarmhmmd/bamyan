@@ -17,3 +17,10 @@
   border: 1px solid var(--light-brown);
 }
 
+.active {
+  background-color: red;
+}
+
+.nonActive {
+  display: none;
+}

@@ -8,6 +8,14 @@ const leftItem = {
   hidden: { opacity: 0, y: 0 },
   visible: { opacity: 1, y: -8 },
 };
+const activeItemTop = {
+  hidden: { opacity: 1, y: -8 },
+  visible: { opacity: 1, y: 0 },
+};
+const activeItemBottom = {
+  hidden: { opacity: 1, y: 8 },
+  visible: { opacity: 1, y: 0 },
+};
 const rightItem = {
   hidden: { opacity: 0, y: 0 },
   visible: { opacity: 1, y: 8 },
@@ -15,7 +23,6 @@ const rightItem = {
 
 export default function Cave(props) {
   const router = useRouter();
-  console.log("heyyy", router.asPath);
   const [isOn, setIsOn] = useState(false);
   const toggleSwitch = () => setIsOn(!isOn);
   useEffect(() => {
@@ -33,7 +40,36 @@ export default function Cave(props) {
         zIndex: props.zIndex,
       }}
     >
-      <Link href={props.eng} className={styles.caveContainer}>
+      <Link href={props.eng} className={router.pathname === ('/' + props.eng) ? styles.caveContainer : styles.nonActive}>
+        <motion.div
+          variants={activeItemTop}
+          transition={{ duration: 0.5 }}
+          class="english"
+          style={{
+            textTransform: "capitalize",
+          }}
+        >
+          {props.eng}
+        </motion.div>
+        <motion.div
+          whileTap={{ scale: 0.9 }}
+          style={{
+            borderRadius: `${props.radius} ${props.radius} 0 0`,
+            width: props.width,
+            zIndex: props.zIndex,
+            left: props.left,
+          }}
+          className={styles.cave}
+        ></motion.div>
+        <motion.div
+          variants={activeItemBottom}
+          transition={{ duration: 0.5 }}
+          class="farsi"
+        >
+          {props.farsi}
+        </motion.div>
+      </Link>
+      <Link href={props.eng} className={router.pathname != ('/' + props.eng) ? styles.caveContainer : styles.nonActive}>
         <motion.div
           variants={leftItem}
           transition={{ duration: 0.5 }}

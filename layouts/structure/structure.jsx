@@ -18,15 +18,7 @@ export default function Structure({ children }) {
     <motion.div data-isOn={isOn} className={styles.container}>
       <Navigation />
       <AnimatePresence>
-        <motion.div
-          layout
-          data-isOn={isOn}
-          key={router.asPath}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className={styles.childrenContainer}
-        >
+        <motion.div data-isOn={isOn} className={styles.childrenContainer}>
           {children}
         </motion.div>
       </AnimatePresence>
