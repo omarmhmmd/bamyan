@@ -3,6 +3,7 @@
 }
 .animContainer[data-isOn="true"] {
   position: relative;
+  top: 32px;
 }
 
 .caveContainer {

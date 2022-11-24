@@ -1,6 +1,5 @@
 .navigation {
   display: flex;
-  margin-top: 16px;
   width: 100vw;
   justify-content:space-around;
   align-items: center;
