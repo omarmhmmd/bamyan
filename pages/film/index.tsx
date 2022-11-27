@@ -30,6 +30,23 @@ export default function Film() {
             <p>
               Bamyan is a typeface exploring the cultural history of the great
               Bamyan Valley of Afghanistan. - Omar
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan Valley of Afghanistan. - Omar
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan Valley of Afghanistan. - Omar
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan Valley of Afghanistan. - Omar
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan Valley of Afghanistan. - Omar
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan is a typeface exploring the cultural history of the great
+              Bamyan Valley of Afghanistan. - Omar
+              Bamyan is a typeface exploring the cultural history of the great
+            
             </p>
           </div>
         </div>

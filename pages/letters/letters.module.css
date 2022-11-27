@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400&display=swap");
+
+.container {
+  display: flex;
+  width: 90vw;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letterContainer {
+  font-family: "Bamyan-Centered";
+  width: 100%;
+  height: 90%;
+  margin: 100px;
+  background-color: var(--tan);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.letterContainer img {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.headerContainer {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 100%;
+  justify-content: center;
+}
+
+.headerContainer div {
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 62.5px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  border-radius: 12.5px;
+  justify-content: space-evenly;
+  background-color: var(--tan);
+  color: var(--brown);
+}
+
+.headerContainer p:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.headerContainer p {
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+.glyphGrid {
+  font-family: "Bamyan";
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  font-size: 48px;
+  direction: rtl;
+}
+
+.glyph {
+  background-color: var(--tan);
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12.5px;
+  height: 62.5px;
+  width: 62.5px;
+  padding: 16px;
+  padding-bottom: 36px;
+  user-select: none;
+  cursor: alias;
+}

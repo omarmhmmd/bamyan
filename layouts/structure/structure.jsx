@@ -18,7 +18,10 @@ export default function Structure({ children }) {
     <motion.div data-isOn={isOn} className={styles.container}>
       <Navigation />
       <AnimatePresence>
-        <motion.div data-isOn={isOn} className={styles.childrenContainer}>
+        <motion.div
+          data-isOn={isOn}
+          className={styles.childrenContainer}
+        >
           {children}
         </motion.div>
       </AnimatePresence>

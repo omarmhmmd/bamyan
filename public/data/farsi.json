@@ -1,0 +1,256 @@
+{
+  "farsi": [
+    {
+      "key": 1,
+      "value": "ا",
+      "farsi": "الف",
+      "eng": "alef"
+    },
+    {
+      "key": 2,
+      "value": "ب",
+      "farsi": "ب",
+      "eng": "be"
+    },
+    {
+      "key": 3,
+      "value": "پ",
+      "farsi": "پ",
+      "eng": "pe"
+    },
+    {
+      "key": 4,
+      "value": "ت",
+      "farsi": "ت",
+      "eng": "te"
+    },
+    {
+      "key": 5,
+      "value": "ث",
+      "farsi": "ث",
+      "eng": "s̱e"
+    },
+    {
+      "key": 6,
+      "value": "ج",
+      "farsi": "جیم",
+      "eng": "jim"
+    },
+    {
+      "key": 7,
+      "value": "چ",
+      "farsi": "چ",
+      "eng": "če"
+    },
+    {
+      "key": 8,
+      "value": "ح",
+      "farsi": "ح",
+      "eng": "ḥe"
+    },
+    {
+      "key": 9,
+      "value": "خ",
+      "farsi": "خ",
+      "eng": "xe"
+    },
+    {
+      "key": 10,
+      "value": "د",
+      "farsi": "دال",
+      "eng": "dâl"
+    },
+    {
+      "key": 11,
+      "value": "ذ",
+      "farsi": "ذال",
+      "eng": "ẕâl"
+    },
+    {
+      "key": 12,
+      "value": "ر",
+      "farsi": "ر",
+      "eng": "re"
+    },
+    {
+      "key": 13,
+      "value": "ز",
+      "farsi": "ز",
+      "eng": "ze"
+    },
+    {
+      "key": 14,
+      "value": "ژ",
+      "farsi": "ژ",
+      "eng": "že"
+    },
+    {
+      "key": 15,
+      "value": "س",
+      "farsi": "سین",
+      "eng": "sin"
+    },
+    {
+      "key": 16,
+      "value": "ش",
+      "farsi": "شین",
+      "eng": "šin"
+    },
+    {
+      "key": 17,
+      "value": "ص",
+      "farsi": "صاد",
+      "eng": "ṣâd"
+    },
+    {
+      "key": 18,
+      "value": "ض",
+      "farsi": "ضاد",
+      "eng": "zâd"
+    },
+    {
+      "key": 19,
+      "value": "ط",
+      "farsi": "طا",
+      "eng": "tâ"
+    },
+    {
+      "key": 20,
+      "value": "ظ",
+      "farsi": "ظا",
+      "eng": "ẓâ"
+    },
+    {
+      "key": 21,
+      "value": "ع",
+      "farsi": "عین",
+      "eng": "ʿayn"
+    },
+    {
+      "key": 22,
+      "value": "غ",
+      "farsi": "غین",
+      "eng": "ġayn"
+    },
+    {
+      "key": 23,
+      "value": "ف",
+      "farsi": "ف",
+      "eng": "fe"
+    },
+    {
+      "key": 24,
+      "value": "ق",
+      "farsi": "قاف",
+      "eng": "qâf"
+    },
+    {
+      "key": 25,
+      "value": "ک",
+      "farsi": "کاف",
+      "eng": "kâf"
+    },
+    {
+      "key": 26,
+      "value": "گ",
+      "farsi": "گاف",
+      "eng": "gâf"
+    },
+    {
+      "key": 27,
+      "value": "ل",
+      "farsi": "لام",
+      "eng": "lâm"
+    },
+    {
+      "key": 28,
+      "value": "م",
+      "farsi": "میم",
+      "eng": "mim"
+    },
+    {
+      "key": 29,
+      "value": "ن",
+      "farsi": "نون",
+      "eng": "nun"
+    },
+    {
+      "key": 30,
+      "value": "و",
+      "farsi": "واو",
+      "eng": "waw"
+    },
+    {
+      "key": 31,
+      "value": "ه",
+      "farsi": "ه",
+      "eng": "he"
+    },
+    {
+      "key": 32,
+      "value": "ی",
+      "farsi": "ی",
+      "eng": "ya"
+    },
+    {
+      "key": 33,
+      "value": "١",
+      "farsi": "یک",
+      "eng": "yek"
+    },
+    {
+      "key": 34,
+      "value": "٢",
+      "farsi": "دو",
+      "eng": "do"
+    },
+    {
+      "key": 35,
+      "value": "٣",
+      "farsi": "سه",
+      "eng": "aleff"
+    },
+    {
+      "key": 36,
+      "value": "۴",
+      "farsi": "چهار",
+      "eng": "chahâr"
+    },
+    {
+      "key": 37,
+      "value": "۵",
+      "farsi": "پنج",
+      "eng": "panj"
+    },
+    {
+      "key": 38,
+      "value": "۶",
+      "farsi": "شش",
+      "eng": "shesh"
+    },
+    {
+      "key": 39,
+      "value": "٧",
+      "farsi": "هفت",
+      "eng": "haft"
+    },
+    {
+      "key": 40,
+      "value": "٨",
+      "farsi": "هشت",
+      "eng": "hasht"
+    },
+    {
+      "key": 41,
+      "value": "٩",
+      "farsi": "نه",
+      "eng": "noh"
+    },
+    {
+      "key": 42,
+      "value": "۰",
+      "farsi": "صفر",
+      "eng": "sefr"
+    }
+  ]
+}
