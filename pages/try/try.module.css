@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  width: 90vw;
+  height: 100%;
+  flex-direction: column;
+}
+
+.controlsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--tan);
+  padding: 16px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  border-radius: 12.5px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons div {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.bamyan {
+  font-family: Arial;
+  background-color: var(--brown);
+  color: var(--light-brown);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.range {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.range div {
+  font-family: Arial;
+  font-size: 16px;
+  margin-left: 16px;
+  text-align: center;
+}
+
+/*** Input ***/
+.range input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 192px;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+.range input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--brown);
+  height: 2px;
+  border-radius: 25px;
+}
+
+/******** Firefox ********/
+.range input[type="range"]::-moz-range-track {
+  background: var(--brown);
+  height: 2px;
+  border-radius: 25px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+.range input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -10px; /* Centers thumb on the track */
+  background-color: var(--brown);
+  height: 20px;
+  width: 20px;
+  border-radius: 24px;
+}
+/*** End Input ***/
+
+.inputContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.inputContainer input[type=text] {
+  font-family: "Bamyan";
+  color: var(--brown);
+  padding: 16px 0;
+  width: 100%;
+  border-radius: 12.5px;
+  background-color:var(--light-brown);
+  box-sizing: border-box;
+  border: none;
+}
+
+.inputContainer input[type=text]:focus {
+  background-color: none;
+  outline: none;
+}
+
+.inputContainer input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--tan);
+  opacity: 1; /* Firefox */
+  font-family: arial;
+  font-size: 48px;
+}
+
+.inputContainer input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--brown);
+}
+
+.inputContainer input[type=text]::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--brown);
+}
