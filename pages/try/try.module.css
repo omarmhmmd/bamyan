@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  width: 90vw;
+  width: 100vw;
   height: 100%;
   flex-direction: column;
+  align-items: center;
 }
 
 .controlsContainer {
@@ -10,7 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   background-color: var(--tan);
   padding: 16px;
   margin-top: 24px;
@@ -33,18 +34,18 @@
   background-color: var(--brown);
   color: var(--light-brown);
   padding: 8px;
+  font-weight: bold;
   border-radius: 8px;
 }
 
 .range {
   display: flex;
-  flex-direction: row-reverse;
 }
 
 .range div {
   font-family: Arial;
   font-size: 16px;
-  margin-left: 16px;
+  margin: 0 16px;
   text-align: center;
 }
 
@@ -89,36 +90,48 @@
   display: flex;
   flex-direction: row-reverse;
   height: 100%;
+  width: 90%;
   align-items: flex-start;
 }
 
-.inputContainer input[type=text] {
+.inputContainer textarea[type="text"] {
   font-family: "Bamyan";
+  line-height: 100%;
+  height: 100%;
   color: var(--brown);
-  padding: 16px 0;
+  padding: 16px;
+  margin-bottom: 16px;
   width: 100%;
   border-radius: 12.5px;
-  background-color:var(--light-brown);
   box-sizing: border-box;
   border: none;
+  resize: none;
 }
 
-.inputContainer input[type=text]:focus {
+.inputContainer textarea[type="text"]:focus {
   background-color: none;
   outline: none;
 }
 
-.inputContainer input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.inputContainer textarea[type="text"]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--tan);
   opacity: 1; /* Firefox */
   font-family: arial;
   font-size: 48px;
+  padding-top: 24px;
 }
 
-.inputContainer input[type=text]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.inputContainer textarea[type="text"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: var(--brown);
 }
 
-.inputContainer input[type=text]::-ms-input-placeholder { /* Microsoft Edge */
+.inputContainer textarea[type="text"]::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: var(--brown);
+}
+
+.inputContainer textarea::placeholder {
+  font-weight: bold;
 }

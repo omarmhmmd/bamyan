@@ -1,0 +1,23 @@
+.container {
+  width: 90vw;
+  height: 100%;
+}
+
+.blocks {
+  /* margin-top: 24px;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  margin-top: 24px;
+  padding-bottom: 24px;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.blocks div {
+  /* background-color: green; */
+  border-radius: 25px;
+}
