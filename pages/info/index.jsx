@@ -31,11 +31,9 @@ export default function Info() {
             <div className={styles.infoText}>
               <div>
               Bamyan is a speculative project exploring the possibilities of a cultural typeface designed specifically for an Afghan region. It makes reference to the Bamyan Valley of Afghanistan, its Buddhas, and the caves that inhabit it. 
-              Letterforms take on the curved structure of the hollowed out caves piercing the cliff side, while creating an homage to the remnants of the Buddhas that once stood there. It's not much, but it's a first step towards creating a design history for Afghanistan. 
+              Letterforms take on the curved structure of the hollowed out caves piercing the cliff side, while creating an homage to the remnants of the Buddhas that once stood there. Its not much, but its a first step towards creating a design history for Afghanistan. 
               </div>
-              {/* <div style={{fontWeight:"bold"}}>A typeface</div>
-              <div>Designed by</div>
-              <div>Omar Mohammad</div> */}
+             
             </div>
           </div>
           <div
