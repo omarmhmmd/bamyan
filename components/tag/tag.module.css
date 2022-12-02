@@ -1,0 +1,6 @@
+.tag {
+  background-color: var(--brown) !important;
+  color: var(--light-brown) !important;
+  padding: 16px;
+  border-radius: 8px !important;
+}
