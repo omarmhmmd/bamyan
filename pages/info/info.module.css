@@ -24,8 +24,10 @@
 
 .block1 {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   background-color: var(--tan);
   color:var(--brown);
 }
@@ -38,7 +40,11 @@
   justify-content: space-evenly;
   background-color: var(--tan);
   color:var(--brown);
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.block2:hover {
+  cursor: pointer;
 }
 
 .block2 p {
@@ -48,19 +54,33 @@
 .header {
   width: 100%;
   display: flex;
-  padding: 24px;
+  padding: 16px;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .header div {
   background-color: var(--brown);
   color: var(--light-brown);
   padding: 8px;
+  margin: 0 16px;
   font-size: 1vw;
   font-weight: bold;
   border-radius: 8px;
+}
+
+.infoText {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  align-items: space-between;
+  padding: 0 24px;
+  padding-bottom: 24px;
+  line-height: 20px;
+  font-family: Arial;
+  font-size: 16px;
 }
 
 .block1 p {

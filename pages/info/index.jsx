@@ -21,19 +21,31 @@ export default function Info() {
             style={{
               gridColumnStart: "1",
               gridColumnEnd: "3",
-              backgroundImage:
-                "url(https://upload.wikimedia.org/wikipedia/commons/b/be/Fran%C3%A7oise_Foliot_-_Afghanistan_-_006.jpg)",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              border: "1px solid var(--brown)",
             }}
-          ></div>
+            className={styles.block1}
+          >
+            <div className={styles.header}>
+              <Tag tag="باميان" />
+              <Tag tag="Bamyan" />
+            </div>
+            <div className={styles.infoText}>
+              <div>
+              Bamyan is a speculative project exploring the possibilities of a cultural typeface designed specifically for an Afghan region. It makes reference to the Bamyan Valley of Afghanistan, its Buddhas, and the caves that inhabit it. 
+              Letterforms take on the curved structure of the hollowed out caves piercing the cliff side, while creating an homage to the remnants of the Buddhas that once stood there. It's not much, but it's a first step towards creating a design history for Afghanistan. 
+              </div>
+              {/* <div style={{fontWeight:"bold"}}>A typeface</div>
+              <div>Designed by</div>
+              <div>Omar Mohammad</div> */}
+            </div>
+          </div>
           <div
             style={{
               gridColumnStart: "3",
               gridColumnEnd: "7",
               fontFamily: "bamyan",
+              display: "flex",
+              justifyContent: "center",
+              alignItems:"center",
               fontSize: "16vw",
               backgroundColor: "var(--brown)",
               color: "var(--light-brown)",
@@ -49,43 +61,34 @@ export default function Info() {
             style={{
               gridColumnStart: "1",
               gridColumnEnd: "3",
+              backgroundImage:
+                "url(https://upload.wikimedia.org/wikipedia/commons/b/be/Fran%C3%A7oise_Foliot_-_Afghanistan_-_006.jpg)",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "bottom",
+              border: "1px solid var(--brown)",
             }}
-            className={styles.block1}
-          >
-            <div className={styles.header}>
-              <Tag tag="Bamyan" />
-              <Tag tag="باميان" />
-            </div>
-          </div>
-          <div
+          ></div>
+          <a
             style={{
               gridColumnStart: "3",
               gridColumnEnd: "5",
             }}
-            className={styles.block2}
+            href="/fonts/Bamyan_v1.0.otf"
+            download
           >
-            {/* <img style={{ width: "128px" }} src="/images/ب.svg" alt="" /> */}
-            <p
-              style={{
-                marginBottom: "0px",
-                fontWeight: "bold",
-                fontSize: "20px",
+            <motion.div
+              whileHover={{
+                scale: 0.95,
+                transition: { duration: 0.25 },
               }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.25 } }}
+              className={styles.block2}
             >
-              Bamyan
-            </p>
-            <p style={{ fontSize: "20px", marginBottom: "0px" }}>A Typeface</p>
-            <p style={{ fontSize: "20px", marginBottom: "0px" }}>Designed by</p>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ fontFamily: "Farsi", fontWeight: "bold" }}>
-                عمر محمد
-              </p>{" "}
-              <p style={{ marginLeft: "16px", fontWeight: "bold" }}>
-                Omar Mohammad
-              </p>
-            </div>
-            <Tag tag="Download Bamyan.otf"/>
-          </div>
+              <img style={{ width: "12.5vw" }} src="/images/ب.svg" alt="" />
+              <p style={{ fontWeight: "bold" }}>Download Bamyan.otf</p>
+            </motion.div>
+          </a>
           <div
             style={{
               gridColumnStart: "5",
