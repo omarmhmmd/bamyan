@@ -2,9 +2,14 @@
   display: flex;
   width: 90vw;
   margin-top: 24px;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
-
-
+@media (max-width: 1024px) {
+  .navigation {
+    align-items: center;
+    flex-direction: column;
+  }
+}
