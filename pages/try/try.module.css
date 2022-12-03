@@ -42,6 +42,12 @@
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .range {
+    display: none;
+  }
+}
+
 .range div {
   font-family: Arial;
   font-size: 16px;
