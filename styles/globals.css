@@ -66,16 +66,11 @@ a {
 }
 
 .errorPage {
-  /* background-color: red; */
   height: 100%;
   width: 100%;
 }
 
 @media (max-width: 1024px) {
-  .errorPage {
-    /* background-color: green; */
-  }
-
   .errorPage div {
     top:80% !important;
   }
