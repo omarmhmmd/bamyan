@@ -19,14 +19,33 @@
   border-radius: 12.5px;
 }
 
+@media (max-width: 1024px) {
+  .controlsContainer {
+    flex-direction: column;
+  }
+}
+
 .buttons {
   display: flex;
   align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .buttons {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+}
+
 .buttons div {
   margin: 0 8px;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .buttons div {
+    outline:none !important;
+  }
 }
 
 .bamyan {
@@ -38,15 +57,29 @@
   border-radius: 8px;
 }
 
+@media (max-width: 1024px) {
+  .bamyan {
+    margin-top: 8px;
+  }
+}
+
 .range {
   display: flex;
 }
 
 @media (max-width: 1024px) {
   .range {
-    display: none;
+    flex-direction: column;
   }
 }
+
+@media (max-width: 1024px) {
+  .uiPadding {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 
 .range div {
   font-family: Arial;
@@ -64,6 +97,12 @@
   width: 192px;
 }
 
+@media (max-width: 1024px) {
+  .range input[type="range"] {
+    width: 256px;
+  }
+}
+
 /***** Track Styles *****/
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 .range input[type="range"]::-webkit-slider-runnable-track {
@@ -71,6 +110,7 @@
   height: 2px;
   border-radius: 25px;
 }
+
 
 /******** Firefox ********/
 .range input[type="range"]::-moz-range-track {
@@ -90,6 +130,15 @@
   width: 20px;
   border-radius: 24px;
 }
+
+@media (max-width: 1024px) {
+  .range input[type="range"]::-webkit-slider-thumb {
+    height: 25px;
+  width: 25px;
+   box-shadow: none;
+   margin-top: -12px; /* Centers thumb on the track */
+  }
+}
 /*** End Input ***/
 
 .inputContainer {
@@ -102,7 +151,7 @@
 
 @media (max-width: 1024px) {
   .inputContainer {
-    /* height: 100vh; */
+    height: 100vh;
   }
 }
 
@@ -122,9 +171,9 @@
 
 @media (max-width: 1024px) {
   .inputContainer textarea[type="text"] {
-    font-size: 25vh !important;
+    /* font-size: 25vh !important;
     line-height: normal !important;
-    padding-top: 0px;
+    padding-top: 0px; */
   }
 }
 
@@ -137,8 +186,8 @@
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--tan);
   opacity: 1; /* Firefox */
-  font-family: arial;
-  font-size: 48px;
+  font-family: "bamyan";
+  font-size: 128px !important;
   padding-top: 24px;
 }
 
@@ -160,6 +209,6 @@
   color: var(--brown);
 }
 
-.inputContainer textarea::placeholder {
-  /* font-weight: bold; */
-}
+/* .inputContainer textarea::placeholder {
+ font-family: "Bamyan" !important;
+} */

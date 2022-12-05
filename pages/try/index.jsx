@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Try() {
   const MAX = 528;
   const [size, setSize] = useState(128);
-  const [lineHeight, setLineHeight] = useState(25);
+  const [lineHeight, setLineHeight] = useState(100);
   const [isDark, setDark] = useState(false);
   return (
     <>
@@ -46,7 +46,7 @@ export default function Try() {
             ></div>
           </div>
           <div className={styles.range}>
-            <div>Line Height</div>
+            <div className={styles.uiPadding}>Line Height</div>
             <input
               type="range"
               min="25"
@@ -54,10 +54,10 @@ export default function Try() {
               onChange={(e) => setLineHeight(e.target.value)}
               value={lineHeight}
             />
-            <div>{lineHeight}%</div>
+            <div className={styles.uiPadding}>{lineHeight}%</div>
           </div>
           <div className={styles.range}>
-            <div>Font Size</div>
+            <div className={styles.uiPadding}>Font Size</div>
             <input
               type="range"
               min="128"
@@ -65,7 +65,7 @@ export default function Try() {
               onChange={(e) => setSize(e.target.value)}
               value={size}
             />
-            <div>{size}px</div>
+            <div className={styles.uiPadding}>{size}px</div>
           </div>
         </div>
         <div className={styles.inputContainer}>
@@ -77,11 +77,13 @@ export default function Try() {
               backgroundColor: isDark ? "var(--brown)" : "var(--light-brown)",
               color: isDark ? "var(--light-brown)" : "var(--brown)",
             }}
-            placeholder="Switch to Arabic keyboard and type here"
+            // placeholder="باميان"
             lang="ar"
             dir="rtl"
             type="text"
-          />
+          >
+            اين حروف باميان است.
+          </textarea>
         </div>
       </motion.div>
     </>

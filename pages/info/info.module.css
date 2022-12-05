@@ -4,17 +4,18 @@
 }
 
 .blocks {
-  /* margin-top: 24px;
-  width: 100%;
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
   margin-top: 24px;
   padding-bottom: 24px;
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .blocks {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .blocks div {
@@ -29,7 +30,7 @@
   align-content: center;
   justify-content: center;
   background-color: var(--tan);
-  color:var(--brown);
+  color: var(--brown);
 }
 .block2 {
   display: flex;
@@ -39,7 +40,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--tan);
-  color:var(--brown);
+  color: var(--brown);
   font-size: 16px;
 }
 
@@ -51,13 +52,26 @@
   text-align: center;
 }
 
-.header {
-  width: 100%;
+.pHeader {
   display: flex;
-  padding: 16px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  font-family: arial;
+  align-items: flex-start;
+  font-weight: bold;
+}
+.pHeader p {
+  font-size: 16px !important;
+  line-height: normal !important;
+}
+
+.mobileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 24px;
+  margin: 16px;
 }
 
 .header div {
@@ -88,3 +102,55 @@
   line-height: 0px;
 }
 
+.txt {
+  font-family: "Bamyan";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18vw;
+  background-color: var(--brown);
+  color: var(--light-brown);
+  padding: 16px;
+  line-height: 10vw;
+  text-align: center;
+  padding-bottom: 8vw;
+}
+
+@media (max-width: 1024px) {
+  .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37.5vw;
+    background-color: var(--brown);
+    color: var(--light-brown);
+    padding: 16px;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 10vh;
+  }
+
+  .smlTxt {
+    font-size: 25vw;
+    padding-bottom: 8vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .images {
+    height: 100vh !important;
+  }
+
+  .dwnLoad {
+    height: 40vw !important
+  }
+
+  .dwnLoad img {
+    width: 30vw !important;
+  }
+
+  .imgLeft {
+    height: 100vh !important;
+    background-position: 27.5% !important;
+  }
+}

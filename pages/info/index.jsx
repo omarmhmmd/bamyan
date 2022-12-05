@@ -24,38 +24,42 @@ export default function Info() {
             }}
             className={styles.block1}
           >
-            <div className={styles.header}>
-              <Tag tag="باميان" />
-              <Tag tag="Bamyan" />
+            <div className={styles.mobileHeader}>
+              <img
+                style={{ marginBottom: "16px" }}
+                src="images/film_logo.svg"
+                alt=""
+              />
+              <div className={styles.pHeader}>
+                <p style={{ marginBottom: "4px" }}>Berkeley, California</p>
+                <p>November 29, 2022</p>
+              </div>
             </div>
             <div className={styles.infoText}>
               <div>
-              Bamyan is a speculative project exploring the possibilities of a cultural typeface designed specifically for an Afghan region. It makes reference to the Bamyan Valley of Afghanistan, its Buddhas, and the caves that inhabit it. 
-              Letterforms take on the curved structure of the hollowed out caves piercing the cliff side, while creating an homage to the remnants of the Buddhas that once stood there. Its not much, but its a first step towards creating a design history for Afghanistan. 
+                Bamyan is a speculative project exploring the possibilities of a
+                cultural typeface designed specifically for an Afghan region. It
+                makes reference to the Bamyan Valley of Afghanistan, its
+                Buddhas, and the caves that inhabit it. Letterforms take on the
+                curved structure of the hollowed out caves piercing the cliff
+                side, while creating an homage to the remnants of the Buddhas
+                that once stood there. Its not much, but its a first step
+                towards creating a design history for Afghanistan.
               </div>
-             
             </div>
           </div>
           <div
+            lang="ar"
+            className={`${styles.txt} ${styles.smlTxt}`}
             style={{
               gridColumnStart: "3",
               gridColumnEnd: "7",
-              fontFamily: "bamyan",
-              display: "flex",
-              justifyContent: "center",
-              alignItems:"center",
-              fontSize: "16vw",
-              backgroundColor: "var(--brown)",
-              color: "var(--light-brown)",
-              padding: "16px",
-              lineHeight: "10vw",
-              textAlign: "center",
-              paddingBottom: "7vw",
             }}
           >
             افغانستان
           </div>
           <div
+            className={`${styles.images} ${styles.imgLeft}`}
             style={{
               gridColumnStart: "1",
               gridColumnEnd: "3",
@@ -68,11 +72,12 @@ export default function Info() {
             }}
           ></div>
           <a
+            className={styles.dwnLoad}
             style={{
               gridColumnStart: "3",
               gridColumnEnd: "5",
             }}
-            href="/fonts/Bamyan_v1.0.otf"
+            href="/fonts/Bamyan_v1.1.otf"
             download
           >
             <motion.div
@@ -88,6 +93,7 @@ export default function Info() {
             </motion.div>
           </a>
           <div
+            className={styles.images}
             style={{
               gridColumnStart: "5",
               gridColumnEnd: "7",
@@ -103,26 +109,21 @@ export default function Info() {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundBlendMode: "multiply",
-              backgroundPosition: "top",
+              backgroundPosition: "right",
               border: "1px solid var(--brown)",
             }}
           ></div>
           <div
+            className={styles.txt}
             style={{
               gridColumnStart: "1",
               gridColumnEnd: "3",
-              fontFamily: "bamyan",
-              fontSize: "16vw",
-              backgroundColor: "var(--brown)",
-              color: "var(--light-brown)",
-              padding: "16px",
-              lineHeight: "12vw",
-              textAlign: "center",
             }}
           >
             كابل
           </div>
           <div
+            className={styles.images}
             style={{
               gridColumnStart: "3",
               gridColumnEnd: "4",
@@ -135,17 +136,10 @@ export default function Info() {
             }}
           ></div>
           <div
+            className={styles.txt}
             style={{
               gridColumnStart: "4",
               gridColumnEnd: "7",
-              fontFamily: "bamyan",
-              fontSize: "20vw",
-              backgroundColor: "var(--tan)",
-              color: "var(--brown)",
-              padding: "16px",
-              lineHeight: "10vw",
-              textAlign: "center",
-              paddingBottom: "8vw",
             }}
           >
             باميان
