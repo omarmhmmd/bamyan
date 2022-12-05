@@ -89,7 +89,7 @@ export default function Info() {
               className={styles.block2}
             >
               <img style={{ width: "12.5vw" }} src="/images/ب.svg" alt="" />
-              <p style={{ fontWeight: "bold" }}>Download Bamyan.otf</p>
+              <p style={{ fontWeight: "bold" }}>Download Bamyan_v1.1.otf</p>
             </motion.div>
           </a>
           <div
