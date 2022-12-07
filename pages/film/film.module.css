@@ -106,8 +106,8 @@
 }
 
 .info img {
-  width: 96px;
-  margin-bottom: 24px;
+  /* width: 96px; */
+  margin-bottom: 16px;
 }
 
 .text p {

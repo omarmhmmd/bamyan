@@ -44,7 +44,7 @@ export default function Info() {
                 Buddhas, and the caves that inhabit it. Letterforms take on the
                 curved structure of the hollowed out caves piercing the cliff
                 side, while creating an homage to the remnants of the Buddhas
-                that once stood there. Its not much, but its a first step
+                that once stood there. It's not much, but its a first step
                 towards creating a cultural design language for Afghanistan.
                 <br />
                 <br />
