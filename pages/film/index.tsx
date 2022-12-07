@@ -74,8 +74,8 @@ export default function Film() {
                 wonders of the Bamyan Valley and its Buddhas.
                 <br /> <br />
                 The film includes original music, custom graphics and
-                typography, and a personalized voiceover. Its not much, but
-                its a first step towards creating a cultural design language
+                typography, and a personalized voiceover. It&apos;s not much, but
+                it&apos;s a first step towards creating a cultural design language
                 for Afghanistan.
                 <br /><br />
                 – <Link target="_blank" href="https://omarmhmmd.com/">
