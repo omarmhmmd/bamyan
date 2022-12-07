@@ -7,7 +7,7 @@ export default function Try() {
   const MAX = 528;
   const [size, setSize] = useState(128);
   const [lineHeight, setLineHeight] = useState(100);
-  const [isDark, setDark] = useState(false);
+  const [isDark, setDark] = useState(true);
   return (
     <>
       <Head>

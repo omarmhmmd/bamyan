@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./info.module.css";
 import Tag from "../../components/tag/tag";
 import { motion } from "framer-motion";
+import Link from 'next/link'
 
 export default function Info() {
   return (
@@ -43,8 +44,14 @@ export default function Info() {
                 Buddhas, and the caves that inhabit it. Letterforms take on the
                 curved structure of the hollowed out caves piercing the cliff
                 side, while creating an homage to the remnants of the Buddhas
-                that once stood there. Its not much, but its a first step
-                towards creating a design history for Afghanistan.
+                that once stood there. It's not much, but it's a first step
+                towards creating a cultural design language for Afghanistan.
+                <br />
+                <br />
+                – <Link target="_blank" href="https://omarmhmmd.com/">
+                  <span style={{fontWeight:"bold"}}>omarmhmmd</span>&nbsp;&nbsp;
+                  <span style={{fontFamily:"Farsi"}}>عمر محمد </span> 
+                </Link>
               </div>
             </div>
           </div>
@@ -77,7 +84,7 @@ export default function Info() {
               gridColumnStart: "3",
               gridColumnEnd: "5",
             }}
-            href="/fonts/Bamyan_v1.1.otf"
+            href="/fonts/Bamyan_v1.0.otf"
             download
           >
             <motion.div
@@ -89,7 +96,7 @@ export default function Info() {
               className={styles.block2}
             >
               <img style={{ width: "12.5vw" }} src="/images/ب.svg" alt="" />
-              <p style={{ fontWeight: "bold" }}>Download Bamyan_v1.1.otf</p>
+              <p style={{ fontWeight: "bold" }}>Download Bamyan_v1.0.otf</p>
             </motion.div>
           </a>
           <div

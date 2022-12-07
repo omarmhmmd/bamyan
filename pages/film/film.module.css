@@ -113,5 +113,5 @@
 .text p {
   font-size: 16px;
   font-family: Arial;
-  overflow-y: scroll;
+  line-height: 20px;
 }

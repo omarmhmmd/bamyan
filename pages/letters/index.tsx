@@ -22,7 +22,6 @@ export default function Glyphs() {
       >
         <div className={styles.letterContainer}>
           <img src={`images/svg/${letter}.svg`} alt="" />
-          {/* <div className={styles.letter}>{letter}</div> */}
         </div>
         <div className={styles.glyphContainer}>
           <div className={styles.headerContainer}>
