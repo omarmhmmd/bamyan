@@ -63,7 +63,7 @@
 
 .info {
   margin-left: 16px;
-  padding: 16px;
+  padding: 16px 24px;
   border-radius: 25px;
   color: var(--brown);
   background-color: var(--tan);
