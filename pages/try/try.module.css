@@ -1,3 +1,15 @@
+.popUp {
+  font-family: Arial;
+  position: absolute;
+  background-color: var(--light-brown);
+  color: var(--brown);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  padding: 16px;
+}
+
 .container {
   display: flex;
   width: 100vw;

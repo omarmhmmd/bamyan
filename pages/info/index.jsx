@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "./info.module.css";
 import Tag from "../../components/tag/tag";
 import { motion } from "framer-motion";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Info() {
   return (
@@ -38,19 +38,21 @@ export default function Info() {
             </div>
             <div className={styles.infoText}>
               <div>
-                Bamyan is a speculative project exploring the possibilities of a
-                cultural typeface designed specifically for an Afghan region. It
-                makes reference to the Bamyan Valley of Afghanistan, its
-                Buddhas, and the caves that inhabit it. Letterforms take on the
-                curved structure of the hollowed out caves piercing the cliff
-                side, while creating an homage to the remnants of the Buddhas
-                that once stood there. It&apos;s not much, but it&apos;s a first step
-                towards creating a cultural design language for Afghanistan.
+                Bamyan is a design project exploring the possibilities of a
+                cultural typeface designed specifically for a region of
+                Afghanistan. It makes reference to the Bamyan Valley of
+                Afghanistan, its Buddhas, and the caves that inhabit it.
+                Letterforms take on the curved structure of the hollowed out
+                caves piercing the cliff side, while creating an homage to the
+                topography of the region, both natural and man-made. It&apos;s
+                not much, but it&apos;s a contribution to the  cultural
+                design language for Afghanistan.
                 <br />
-                <br />
-                – <Link target="_blank" href="https://omarmhmmd.com/">
-                  <span style={{fontWeight:"bold"}}>omarmhmmd</span>&nbsp;&nbsp;
-                  <span style={{fontFamily:"Farsi"}}>عمر محمد </span> 
+                <br />–{" "}
+                <Link target="_blank" href="https://omarmhmmd.com/">
+                  <span style={{ fontWeight: "bold" }}>omarmhmmd</span>
+                  &nbsp;&nbsp;
+                  <span style={{ fontFamily: "Farsi" }}>عمر محمد </span>
                 </Link>
               </div>
             </div>
