@@ -19,6 +19,16 @@ export default function Try() {
         transition={{ duration: 1 }}
         className={styles.container}
       >
+        {/* <motion.div
+        exit={{ opacity:0 }}
+        initial={{ opacity:0 }}
+        animate={{ opacity:1 }}
+        transition={{ duration: 10 }}
+
+          className={styles.popUp}
+        >
+          Apple menu {'>'} System Settings {'>'} Keyboard {'>'} Input Sources {'>'} Arabic - QWERTY {'>'} Add
+        </motion.div> */}
         <div className={styles.controlsContainer}>
           <div className={styles.bamyan}>Bamyan</div>
           <div className={styles.buttons}>

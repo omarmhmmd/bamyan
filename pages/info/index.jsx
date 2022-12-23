@@ -45,8 +45,8 @@ export default function Info() {
                 Letterforms take on the curved structure of the hollowed out
                 caves piercing the cliff side, while creating an homage to the
                 topography of the region, both natural and man-made. It&apos;s
-                not much, but it&apos;s a contribution to the  cultural
-                design language for Afghanistan.
+                not much, but it&apos;s a trying contribution to the  cultural
+                design language of Afghanistan.
                 <br />
                 <br />–{" "}
                 <Link target="_blank" href="https://omarmhmmd.com/">
