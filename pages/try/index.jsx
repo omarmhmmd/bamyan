@@ -1,13 +1,36 @@
 import Head from "next/head";
+import React from "react";
 import styles from "./try.module.css";
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Try() {
   const MAX = 528;
   const [size, setSize] = useState(128);
   const [lineHeight, setLineHeight] = useState(100);
   const [isDark, setDark] = useState(true);
+  const [show, setShow] = useState(false);
+
+  const Btn = (props) => {
+    return (
+      <motion.div
+        whileTap={{ scale: 0.9 }}
+        className="btn-hover"
+        style={{
+          fontFamily: "arial",
+          border: "1px solid #3C3731",
+          fontWeight: "bold",
+          borderRadius: "8px",
+          color: props.color,
+          padding: "8px",
+          marginLeft: props.margin,
+          backgroundColor: props.bgColor,
+        }}
+      >
+        {props.confirm}
+      </motion.div>
+    );
+  };
   return (
     <>
       <Head>
@@ -19,16 +42,77 @@ export default function Try() {
         transition={{ duration: 1 }}
         className={styles.container}
       >
-        {/* <motion.div
-        exit={{ opacity:0 }}
-        initial={{ opacity:0 }}
-        animate={{ opacity:1 }}
-        transition={{ duration: 10 }}
-
-          className={styles.popUp}
-        >
-          Apple menu {'>'} System Settings {'>'} Keyboard {'>'} Input Sources {'>'} Arabic - QWERTY {'>'} Add
-        </motion.div> */}
+        <AnimatePresence>
+          {show && (
+            <motion.div
+              initial={{
+                top: "125%",
+                // left: "50%",
+                // transform: "translate(-50%, -50%)",
+              }}
+              animate={{
+                top: "50%",
+                // left: "50%",
+                // transform: "translate(-50%, -50%)",
+                transition: {
+                  ease: "easeInOut",
+                  type: "spring",
+                  // delay: 1,
+                  duration: 3,
+                },
+              }}
+              exit={{
+                top: "125%",
+                // left: "50%",
+                // transform: "translate(-50%, -50%)",
+                transition: {
+                  ease: "easeInOut",
+                  type: "spring",
+                  delay: 0,
+                  duration: 3,
+                },
+              }}
+              className={styles.popUp}
+            >
+              <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
+                Message
+              </span>
+              <span style={{ fontWeight: "none", textTransform: "none" }}>
+                Salaam! To type in Farsi you will need to add the 'Arabic -
+                QWERTY' keyboard to your input sources and then switch to it.
+              </span>
+              <br />
+              <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
+                Guide
+              </span>
+              <span style={{ fontWeight: "none" }}>
+                System Settings {">"} Keyboard {">"} Input
+                Sources {">"} Arabic - QWERTY {">"} Add
+              </span>
+              <br />
+              <div
+                style={{
+                  width: "100%",
+                  backgroundColor: "none",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                }}
+              >
+                <a style={{ cursor: "pointer" }} onClick={() => setShow(false)}>
+                  <Btn bgColor="#3C3731" color="#8F8679" confirm="Continue" />
+                </a>
+                <a
+                  style={{ cursor: "pointer" }}
+                  target="_blank"
+                  href="https://support.apple.com/guide/mac-help/write-in-another-language-on-mac-mchlp1406/mac"
+                >
+                  <Btn margin="16px" bgColor="#8F8679" color="#3C3731" confirm="More help" />
+                </a>
+              </div>
+              {/* <div style={{width:"25vw"}}><img style={{width: "100%"}} src="images/arabic-keyboard.png" alt="" /></div> */}
+            </motion.div>
+          )}
+        </AnimatePresence>
         <div className={styles.controlsContainer}>
           <div className={styles.bamyan}>Bamyan</div>
           <div className={styles.buttons}>
@@ -77,6 +161,9 @@ export default function Try() {
             />
             <div className={styles.uiPadding}>{size}px</div>
           </div>
+          <a style={{ cursor: "pointer" }} onClick={() => setShow(true)}>
+            <Btn color="#3C3731" bgColor="#7f7769"  confirm="? Help" />
+          </a>
         </div>
         <div className={styles.inputContainer}>
           <textarea
