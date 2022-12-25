@@ -78,8 +78,8 @@ export default function Try() {
                 Message
               </span>
               <span style={{ fontWeight: "none", textTransform: "none" }}>
-                Salaam! To type in Farsi you will need to add the 'Arabic -
-                QWERTY' keyboard to your input sources and then switch to it.
+                Salaam! To type in Farsi you will need to add the &apos;Arabic -
+                QWERTY&apos; keyboard to your input sources and then switch to it.
               </span>
               <br />
               <span style={{ fontWeight: "bold", textDecoration: "underline" }}>
@@ -104,6 +104,7 @@ export default function Try() {
                 <a
                   style={{ cursor: "pointer" }}
                   target="_blank"
+                  rel="noreferrer"
                   href="https://support.apple.com/guide/mac-help/write-in-another-language-on-mac-mchlp1406/mac"
                 >
                   <Btn margin="16px" bgColor="#8F8679" color="#3C3731" confirm="More help" />
