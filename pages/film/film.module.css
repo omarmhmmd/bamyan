@@ -34,6 +34,7 @@
   .video {
     width: 100%;
     margin-bottom: 16px;
+    border-radius: 25px;
   }
 }
 
@@ -59,6 +60,12 @@
   height: 100%;
   border-radius: 50px;
   /* border: 1px solid var(--brown); */
+}
+
+@media (max-width: 1024px) {
+  .vimeo iframe {
+    border-radius: 25px;
+  }
 }
 
 .info {
