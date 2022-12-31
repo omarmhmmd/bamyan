@@ -23,7 +23,7 @@ export default function Film() {
               showTitle={false}
               showPortrait={false}
               showByline={false}
-              video="246914053"
+              video="785326960"
             />
             {/* <img src="images/meta.png" alt="" /> */}
           </div>
@@ -32,7 +32,7 @@ export default function Film() {
               <img src="images/film_logo.svg" alt="" />
               <div className={styles.pHeader}>
                 <p style={{ paddingBottom: "4px" }}>Kabul, Afghanistan</p>
-                <p>November 29, 1973</p>
+                <p>November 29, 1994</p>
               </div>
             </div>
             <div className={styles.text}>

@@ -27,7 +27,7 @@
   width: 75%;
   height: 100%;
   border: 1px solid var(--brown);
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -40,7 +40,7 @@
 .video img {
   width: 100%;
   height:auto;
-  border-radius: 25px;
+  /* border-radius: 50px; */
 }
 
 .vimeo {
@@ -57,7 +57,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 50px;
   /* border: 1px solid var(--brown); */
 }
 
