@@ -27,7 +27,7 @@
   width: 75%;
   height: 100%;
   border: 1px solid var(--brown);
-  border-radius: 50px;
+  border-radius: 2.75vw;
 }
 
 @media (max-width: 1024px) {
@@ -58,7 +58,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 2.75vw;
   /* border: 1px solid var(--brown); */
 }
 

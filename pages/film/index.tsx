@@ -3,6 +3,7 @@ import styles from "./film.module.css";
 import { motion } from "framer-motion";
 import Vimeo from "@u-wave/react-vimeo";
 import Link from "next/link";
+import ReactPlayer from "react-player";
 
 export default function Film() {
   return (
@@ -18,13 +19,14 @@ export default function Film() {
       >
         <div className={styles.center}>
           <div className={styles.video}>
-            <Vimeo
+            <ReactPlayer controls={false} className={styles.vimeo} width="100%" height="100%" url="https://www.youtube.com/watch?v=UXvTwVBYa0Y" />
+            {/* <Vimeo
               className={styles.vimeo}
               showTitle={false}
               showPortrait={false}
               showByline={false}
               video="785326960"
-            />
+            /> */}
             {/* <img src="images/meta.png" alt="" /> */}
           </div>
           <div className={styles.info}>
@@ -37,9 +39,9 @@ export default function Film() {
             </div>
             <div className={styles.text}>
               <p>
-                Salaam, and thank you for watching this film. I&apos;m Omar Mohammad,
-                a designer based in Kabul, Afghanistan. While studying Design at
-                Kabul University, the reality that our country lacks a
+                Salaam, and thank you for watching this film. I&apos;m Omar
+                Mohammad, a designer based in Kabul, Afghanistan. While studying
+                Design at Kabul University, the reality that our country lacks a
                 contemporary cultural design language in many fields, especially
                 architecture and graphic design, was a constant constraint in my
                 work and research. My main focus as a student and now as a
@@ -75,14 +77,14 @@ export default function Film() {
                 <br />
                 <br />
                 The film includes original music, custom graphics and
-                typography, and a personalized voiceover. I&apos;d like to thank my
-                classmates, colleagues, and professors at Kabul University for
-                their support throughout this project. It&apos;s not much, but it&apos;s a
-                first step towards creating a cultural design language for
-                Afghanistan.
+                typography, and a personalized voiceover. I&apos;d like to thank
+                my classmates, colleagues, and professors at Kabul University
+                for their support throughout this project. It&apos;s not much,
+                but it&apos;s a first step towards creating a cultural design
+                language for Afghanistan.
                 <br />
-                <br />
-                – <Link target="_blank" href="https://omarmhmmd.com/">
+                <br />–{" "}
+                <Link target="_blank" href="https://omarmhmmd.com/">
                   <span style={{ fontWeight: "bold" }}>omarmhmmd</span>
                   &nbsp;&nbsp;
                   <span style={{ fontFamily: "Farsi" }}>عمر محمد </span>
